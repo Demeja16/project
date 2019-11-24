@@ -1,0 +1,69 @@
+.checkbox-btn{
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 7px;
+}
+.checkbox-btn + .order-form__label{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+
+	&:hover:before{
+		border-color:#62d1ba;
+	}
+
+	&:before {
+		content: "";
+		color: #000;
+		position: absolute;
+		left: -62px;
+		top: -11px;
+		width: 35px;
+		height: 35px;
+		background: #fff;
+		border: 2px solid #444;
+		transition: .3s;
+	}
+	&:after{
+		content: url('../img/tick.png');
+		position: absolute;
+		top: 1	px;
+		left: -53px;
+		width: 24px;
+		height: 16px;
+		opacity: 0;
+		transition: .2s;
+	}
+}
+
+.checkbox-btn:checked + label:after {
+	opacity: 1;
+}
+.checkbox-btn:checked + label:before {
+	border-color:#c7c7c7;
+}
+
+@media(min-width: @tablet-width){
+	.checkbox-btn--order-form + .order-form__label{
+		&:before {
+		left: -80px;
+		top: -16px;
+		width: 50px;
+		height: 48px;
+	}
+		&:after{
+			content: url('../img/tick-tablet.png');
+			top: 0px;
+			left: -70px;
+			width: 24px;
+			height: 16px;
+		}
+	}
+}

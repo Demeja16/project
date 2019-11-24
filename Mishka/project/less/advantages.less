@@ -1,0 +1,131 @@
+.advantages{
+	list-style: none;
+}
+.advantages__item{
+	margin-bottom: 30px;
+
+	&--scan{
+		margin-bottom: 35px;
+	}
+	&--handmade{
+		margin-bottom: 34px;
+	}
+}
+
+.advantages__item-image{
+	margin-bottom: 13px;
+
+	&--eco{
+		margin-left: 8px;
+	}
+	&--like{
+		margin-left: 7px;
+	}
+	&--handmade{
+		margin-left: 2px;
+	}
+	&--patriot{
+		margin-left: -6px;	
+	}
+	&--gift{
+		margin-left: 3px;
+	}
+}
+
+.advantages__item-description{
+	color: #000000;
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 20px;
+
+	&--eco{
+		width: 70%;
+	}
+	&--scan{
+		width: 80%;
+		padding-top: 7px;
+	}
+	&--like{
+		width: 75%;
+		padding-top: 3px;
+	}
+	&--handmade{
+		width: 85%;
+	}
+	&--patriot{
+		padding-top: 10px;
+	}
+	&--gift{
+		width: 80%;
+		padding-top: 2px;
+	}
+}
+
+
+@media(min-width: @tablet-width){
+	.advantages{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		-o-flex-direction: row;
+		flex-direction: row;
+
+		&>div{
+			width: 50%;
+		}
+	}
+	.advantages__item{
+		width: 100%;
+		margin-bottom: 57px;
+
+		&--scan{
+			margin-bottom: 64px;
+		}
+	}
+	.advantages__item-description{
+		font-size: 20px;
+		line-height: 22px;
+
+		&--eco{
+			width: 65%;
+		}
+		&--scan{
+			width: 75%;
+		}
+		&--like{
+			width: 70%;
+		}
+	}
+
+	.advantages__item-image{
+		&--handmade{
+			margin-top: 2px;
+		}
+		&--patriot{
+			margin-top: 4px;
+		}
+	}
+}
+
+@media(min-width: @desctop-width){
+	.advantages>div:first-child{
+		width: 42.5%;
+	}
+	.advantages__item-description{
+		&--like{
+			width: 65%;
+		}
+		&--handmade{
+			width: 70%;
+		}
+		&--gift{
+			width: 70%;
+		}
+	}
+	
+}

@@ -1,0 +1,136 @@
+.fast-catalog{
+	background-image: url(../img/fast-catalog__images/fast-catalog-bg--mobile.png);
+	background-position: center -18px;
+	background-repeat: no-repeat;
+	background-color: #fafafa;
+	padding-top: 71px;
+	max-width: 1250px;
+	margin: 0 auto;
+	position: relative;
+		&__title{
+			background: transparent;
+			text-align: center;
+			color: #010000;
+			font-size: 27px;
+			font-weight: 700;
+			line-height: 30px;
+			margin-bottom: 122px;
+			padding-right: 38px;
+			padding-left: 38px;
+		}
+		&__link{
+			width: 100%;
+			display: block;
+			padding-top: 25px;
+			padding-bottom: 30px;
+			background-color: #56c3b2;
+			text-decoration: none;
+			position: relative;
+			padding-left: 30px;
+			color: #fff;
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 24px;
+			transition: all .3s;
+			&:hover{
+				border-radius:5px;
+				padding-top: 30px;
+			}
+			&:active span, &:active .fast-catalog__link-image{
+				opacity: 0.3;
+			}
+		}
+		&__link:last-child{
+			margin-bottom: 0;
+		}
+		&__link--interior{
+			background-color: #63d1bb;
+			&-image{
+				transition: .3s;
+				position: absolute;
+				top: 50%;
+				right: 36px;
+				transform: translateY(-50%);
+			}
+			&:hover{
+				background-color: #59d5bc;
+			}
+			&:hover .fast-catalog__link--interior-image{
+				fill-opacity:0.7;
+			}
+		}
+		.fast-catalog__link-image-toys{
+			transition: .3s;
+		}
+		&__link--toys{
+			&-image{
+				transition: .3s;
+				position: absolute;
+				top: 50%;
+				right: 27px;
+				transform: translateY(-50%);
+			}
+			&:hover{
+				background-color: #46c1ae;
+			}
+			&:hover .fast-catalog__link--toys-image{
+				fill-opacity:0.7;
+			}
+		}
+}
+
+@media(min-width: @tablet-width){
+	.fast-catalog{
+		background-image: url(../img/fast-catalog__images/fast-catalog-bg.png);
+		background-position: center -3px;
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding-top: 152px;
+
+		&__title{
+			font-size: 43px;
+			line-height: 50px;
+			margin-bottom: 374px;
+		}
+		&__link-wrapper{
+			padding-right: 50px;
+			padding-left: 50px;
+		}
+		&__link{
+			display: inline-block;
+			width: 50%;
+			padding-top: 27px;
+			padding-left: 35px;
+			line-height: 30px;
+		}
+		&__link--toys-image{
+			right: 34px;
+		}
+		&__link--wave{
+			position: absolute;
+			bottom: -13px;
+		}
+	}
+}
+@media(min-width: @desctop-width){
+	.fast-catalog{
+		background-position: center -0px;
+		-webkit-background-size: contain;
+		background-size: contain;
+
+		&__title{
+			font-size: 53px;
+			line-height: 57px;
+			margin-bottom: 359px;
+		}
+		&__link-wrapper{
+			padding-right: 100px;
+			padding-left: 100px;
+		}
+		&__link--wave{
+			position: absolute;
+			bottom: -19px;
+		}
+	}
+}

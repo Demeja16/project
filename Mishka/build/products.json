@@ -1,0 +1,41 @@
+{
+	"1" : {
+		"name" : "Зайчик-попрыгайчик",
+		"arguments": "Рост 30 см, вес 200 г",
+		"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolores ex labore maxime ab explicabo dolor voluptate quis quidem distinctio!",
+		"cost" : "1200",
+		"order" : "1",
+		"img" : "img/product/product__photo--rabbit-mobile.png",
+		"img768" : "img/product/product__photo--rabbit-tablet.png",
+		"img1250" : "img/product/product__photo--rabbit-desktop.png",
+		"imgWebp" : "img/product/product__photo--rabbit-mobile.webp",
+		"imgWebp768" : "img/product/product__photo--rabbit-tablet.webp",
+		"imgWebp1250" : "img/product/product__photo--rabbit-desktop.webp"
+	},
+	"2" : {
+		"name" : "Корзинка для белья",
+		"arguments": "Диаметр 15 см, высота 10 см",
+		"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolores ex labore maxime ab explicabo dolor voluptate quis quidem distinctio!",
+		"cost" : "500",
+		"order" : "2",
+		"img" : "img/product/product__photo--basket-mobile.png",
+		"img768" : "img/product/product__photo--basket-tablet.png",
+		"img1250" : "img/product/product__photo--basket-desktop.png",
+		"imgWebp" : "img/product/product__photo--basket-mobile.webp",
+		"imgWebp768" : "img/product/product__photo--basket-tablet.webp",
+		"imgWebp1250" : "img/product/product__photo--basket-desktop.webp"
+	},
+	"3" : {
+		"name" : "Большая корзинка для игрушек",
+		"arguments": "Диаметр 30 см, высота 30 см",
+		"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolores ex labore maxime ab explicabo dolor voluptate quis quidem distinctio!",
+		"cost" : "1490",
+		"order" : "3",
+		"img" : "img/product/product__photo--big-basket-mobile.png",
+		"img768" : "img/product/product__photo--big-basket-tablet.png",
+		"img1250" : "img/product/product__photo--big-basket-desktop.png",
+		"imgWebp" : "img/product/product__photo--big-basket-mobile.webp",
+		"imgWebp768" : "img/product/product__photo--big-basket-tablet.webp",
+		"imgWebp1250" : "img/product/product__photo--big-basket-desktop.webp"
+	}
+}

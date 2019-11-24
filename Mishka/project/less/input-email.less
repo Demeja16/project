@@ -1,0 +1,28 @@
+.input-email{
+	border: none;
+	border-bottom: 2px solid #000;
+	transition: .3s;
+	outline: none;
+	color: #444444;
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 18px;
+	height: 52px;
+	width: 100%;
+	background: transparent;
+
+		&::placeholder{
+			font-weight: 400;
+			opacity: 0.3;
+		}
+		&:hover, &:focus{
+			border-bottom: 2px solid #62d1ba;
+		}
+}
+@media(min-width: @tablet-width){
+	.input-email{
+		font-size: 19px;
+		line-height: 18px;
+		padding: 0 18px;
+	}
+}
