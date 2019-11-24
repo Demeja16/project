@@ -1,0 +1,39 @@
+.full-hd{
+	position: relative;
+	width: 218px;
+	height: 48px;
+	font-family: "PF Din Text Comp Pro";
+	color: #481a1a;
+	font-size: 29px;
+	font-weight: 500;
+	text-transform: uppercase;
+	line-height: 29px;
+  background: transparent;
+	background-image: url(../img/full-hd-bg.png);
+	background-repeat: no-repeat;
+  overflow: hidden;
+  border: none;
+  outline: none;
+	 &:before {
+    content: "";
+    background-color: rgba(255,255,255,0.5);
+    height: 100%;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    transform: skewX(-30deg) translateX(0);
+    transition: none;
+  }
+  &:hover {
+    &:before {
+      transform: skewX(-30deg) translateX(13.5em);
+     transition: all 0.7s ease-in-out;
+    }
+  }
+  &--mod{
+    margin-left: 225px;
+    margin-bottom: 19px;
+  }
+}

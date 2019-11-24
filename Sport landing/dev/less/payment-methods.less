@@ -1,0 +1,29 @@
+.payment-methods{
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	padding-left: 90px;
+
+	&__item{
+		margin-right: 25px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+		transition: .3s;
+		&:hover{
+			opacity: 0.6;
+		}
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}

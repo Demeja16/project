@@ -1,0 +1,1 @@
+var e=document.querySelector("#more-btn"),c=document.querySelector(".second-section__desc");e.addEventListener("click",function(){c.classList.toggle("second-section__desc--clip")});
