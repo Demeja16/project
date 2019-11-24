@@ -1,0 +1,208 @@
+.third-section{
+	background-image: url('../img/light/light.png');
+	background-repeat: no-repeat;
+	background-position: -100px 100px;
+	&__coach{
+		padding-top: 200px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+		&-wrapper{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: flex-end;
+		}
+		&-info{
+			width: 100%;
+			padding-top: 126px;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
+			flex-direction: column;
+			-ms-align-items: center;
+			align-items: center;
+			border: 3px solid #f59f26;
+		}
+		&-photo{
+			position: absolute;
+			top: 61px;
+		}
+		&-author{
+			text-shadow: 0 3px 27px rgba(249, 148, 6, 0.59);
+			color: #f99406;
+			font-family: Roboto;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 14px;
+			text-transform: uppercase;
+			letter-spacing: 1.4px;
+			text-align: center;
+			margin-bottom: 14px;
+		}
+		&-name{
+			color: #ffffff;
+			font-family: Roboto;
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 20px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			text-align: center;
+			margin-bottom: 21px;
+		}
+		&-professions{
+			color: #bdbdbd;
+			font-family: Roboto;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 18px;
+			letter-spacing: 1.4px;
+			text-align: center;
+			margin-bottom: 42px;
+			&>.divider{
+				display: none;
+			}
+		}
+		&-qoute{
+			color: #bdbdbd;
+			font-family: Roboto;
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 24px;
+			letter-spacing: 0.8px;
+			text-align: center;
+			margin-bottom: 77px;
+		}
+	}
+}
+@media(min-width:750px) {
+	.third-section{
+		padding-top: 115px;
+		background-repeat: no-repeat;
+		background-position: right 0;
+		&__coach{
+			padding-top: 0;
+			&-info{
+				-ms-align-items: flex-start;
+				align-items: flex-start;
+				padding-left: 170px;
+			}
+			&-photo{
+				position: absolute;
+				top: 50%;
+				left: -126px;
+				transform: translateY(-50%);
+			}
+			&-author{
+				text-shadow: 0 3px 27px rgba(249, 148, 6, 0.59);
+				color: #f99406;
+				font-family: Roboto;
+				font-size: 14px;
+				font-weight: 300;
+				line-height: 14px;
+				text-transform: uppercase;
+				letter-spacing: 1.4px;
+				text-align: left;
+				margin-bottom: 11px;
+			}
+			&-name{
+				text-align: left;
+				margin-bottom: 45px;
+				position: relative;
+				font-size: 28px;
+				&::before{
+					content:"";
+					width: 300px;
+					height: 2px;
+					background-color: #ffffff;
+					opacity: 0.1;
+					position: absolute;
+					bottom: -22px;
+					left: -102px;
+				}
+			}
+			&-professions{
+				text-align: left;
+				padding-right: 50px;
+				margin-bottom: 25px;
+			}
+			&-qoute{
+				text-align: left;
+				padding-right: 0px;
+				margin-bottom: 137px;
+			}
+		}
+	}
+}
+@media(min-width:1170px){
+	.third-section{
+		padding-top: 130px;
+		background-image: url('../img/light/light-desktop.png');
+		background-position: right 300px top 0px;
+		&__coach{
+			&-info{
+				padding-left: 268px;
+			}
+			&-photo{
+				left: -166px;
+			}
+			&-author{
+				text-shadow: 0 3px 27px rgba(249, 148, 6, 0.59);
+				color: #f99406;
+				font-family: Roboto;
+				font-size: 14px;
+				font-weight: 300;
+				line-height: 14px;
+				text-transform: uppercase;
+				letter-spacing: 1.4px;
+				text-align: left;
+			}
+			&-name{
+				font-size: 40px;
+				line-height: 40px;
+				letter-spacing: 2px;
+				text-align: left;
+				margin-bottom: 45px;
+				position: relative;
+				&::before{
+					width: 401px;
+					left: -201px;
+				}
+			}
+			&-professions{
+				text-align: left;
+				padding-right: 50px;
+				margin-bottom: 55px;
+				&>.divider{
+					display: block;
+				}
+			}
+			&-qoute{
+				text-align: left;
+				padding-right: 0px;
+				margin-bottom: 137px;
+				padding-right: 190px;
+				margin-bottom: 177px;
+			}
+		}
+	}
+
+}

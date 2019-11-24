@@ -1,0 +1,128 @@
+.first-section{
+	background-image: url('../img/circle-bg/circle-bg.png');
+	background-repeat: no-repeat;
+	background-position: center 200px;
+	&__wrapper{
+		position: relative;
+	}
+	&__title{
+		color: #f99406;
+		font-family: Roboto;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 25.89px;
+		text-transform: uppercase;
+		letter-spacing: 1.4px;
+		text-shadow: 0 3px 27px rgba(249, 148, 6, 0.59);
+		text-align: center;
+	}
+	&__subtitle{
+		color: #ffffff;
+		font-family: Roboto;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 30px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		text-align: center;
+	}
+	&__description{
+		color: #bdbdbd;
+		font-family: Roboto;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 24px;
+		letter-spacing: 0.8px;
+		text-align: center;
+		margin-bottom: 0;
+	}
+	&__video-img{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+}
+@media(min-width:750px){
+	.first-section{
+		background-image: url('../img/circle-bg/circle-bg-tablet.png');
+		background-repeat: no-repeat;
+		background-position: right -11.333333vw top 3px;
+		&__text{
+			padding-top: 51px;
+		}
+		&__title{
+			text-align: left;
+			margin: 0;
+			margin-bottom: 10px;
+		}
+		&__subtitle{
+			text-align: left;
+			font-size: 28px;
+			line-height: 36px;
+			letter-spacing: 1.4px;
+			margin-bottom: 10px;
+		}
+		&__description{
+			text-align: left;
+			padding-right: 50px;
+		}
+		&__video-img{
+			padding-top: 40px;
+			margin-bottom: 0;
+			margin-bottom: 60px;
+			justify-content: flex-start;
+		}
+		&__form{
+			position: absolute;
+			bottom: 120px;
+		}
+	}
+}
+@media(min-width:960px){
+	.first-section{
+		background-position: right 3px;
+	}
+}
+@media(min-width:1170px){
+	.first-section{
+		background-image: url('../img/circle-bg/circle-bg-desktop.png');
+		background-position: right -200px top -87px;
+		&__text{
+			padding-top: 74px;
+		}
+		&__subtitle{
+			font-size: 40px;
+			line-height: 52px;
+			letter-spacing: 2px;
+			margin-bottom: 17px;
+		}
+		&__description{
+			font-size: 18px;
+			line-height: 24px;
+			letter-spacing: 0.9px;
+			text-align: left;
+			padding-right: 150px;
+		}
+		&__video-img{
+			padding-top: 0px;
+			margin-bottom: 0;
+			margin-bottom: 80px;
+			justify-content: flex-start;
+			position: relative;
+			top: -30px;
+		}
+		&__form{
+			position: absolute;
+			bottom: 233px;
+		}
+	}
+}
+@media only screen and (min-width: 1450px) {
+	.first-section{
+		background-position: right 11.299435vw top -87px;
+	}
+}
